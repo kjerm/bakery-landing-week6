@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+.header {
+    height: 90vh;
+    background-image: linear-gradient(to bottom right, #bdbcbfa9, #362121b6 ) , url('../img/pilt1.jpeg');
+    background-position: bottom;
+    background-size: cover;
+    
+}
+
+.text-box {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: #0a0707;
+    text-shadow: 0 0 7px  #bdbcbf;
+
+}
+
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.2rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.2rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    } 
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.616);
+    color: rgba(255, 255, 255, 0.616);
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color:  #8f47478a;
+    box-shadow: 0 1rem 2rem #0a0707b0;
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem #0a0707b0;
+    transform: translateY(5px);
+}
+
+.main {
+    background-color: #7e5656;
+    height: 150vh;
+    margin-top: -3rem;
+    text-align: center;
+    padding-top: 3rem;
+    clip-path: polygon(50% 4%, 100% 0, 100% 86%, 0 100%, 0 0);
+}
+
+.main h1 {
+    color: #0a0707;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 7px  #bdbcbf;
+}
+
+.gallery {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+   
+}
+
+.gallery_photo {
+    box-shadow: 0 1.5rem 4rem #292323ee;
+    outline-offset: 1rem;
+    position: absolute;
+    width: 400px;
+    transition: all 0.3s;
+    z-index: 10;
+    
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid #0a07079c;
+    transform: scale(1.1);
+    z-index: 30;
+
+}
+
+.gallery_photo-1 {
+    width: 400px;
+    top: 15%;
+    left: 20%;
+}
+
+.gallery_photo-3 {
+    top: 45%;
+    width: 400px;
+
+}
+
+.gallery_photo-2 {
+    left: 35%;
+    top: 25%;
+    width: 400px;
+
+}
+
+.footer {
+    color: #0a070763;
+    font-size: 25px;
+    height: 100px;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+    
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: #7063638a;
+    transform: scale(1.2);
+
+}
